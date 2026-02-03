@@ -94,6 +94,8 @@
   --sidebar-ring: oklch(0.708 0 0);
   --brand: hsl(27 96% 61%);
   --brand-foreground: hsl(31 97% 72%);
+  --brand: 263 100% 64%; /* Purple color */
+  --brand-foreground: 210 100% 64%;
 }
 
 .dark {

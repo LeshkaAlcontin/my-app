@@ -1,4 +1,3 @@
-// app/components/reading-board.tsx
 export default function ReadingBoard() {
   const readingLists = {
     toBeRead: [
@@ -27,7 +26,7 @@ export default function ReadingBoard() {
       
       <div className="grid md:grid-cols-3 gap-6">
         {/* TO BE READ Column */}
-        <div className="bg-gradient-to-b from-blue-900/20 to-blue-900/5 backdrop-blur-sm p-6 rounded-xl border border-blue-800/50">
+        <div className="bg-gradient-to-b from-blue-900/50 to-blue-900/5 backdrop-blur-sm p-6 rounded-xl border border-blue-800/50">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
               <div className="w-5 h-5 bg-blue-500 rounded-full"></div>
@@ -55,7 +54,7 @@ export default function ReadingBoard() {
         </div>
 
         {/* IN PROGRESS Column */}
-        <div className="bg-gradient-to-b from-purple-900/20 to-purple-900/5 backdrop-blur-sm p-6 rounded-xl border border-purple-800/50">
+        <div className="bg-gradient-to-b from-purple-900/50 to-purple-900/15 backdrop-blur-xl p-6 rounded-xl border border-white/20 shadow-2xl shadow-purple-900/30">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center">
               <div className="w-5 h-5 bg-purple-500 rounded-full"></div>
@@ -89,7 +88,7 @@ export default function ReadingBoard() {
         </div>
 
         {/* FINISHED Column */}
-        <div className="bg-gradient-to-b from-green-900/20 to-green-900/5 backdrop-blur-sm p-6 rounded-xl border border-green-800/50">
+        <div className="bg-gradient-to-b from-green-900/50 to-green-900/15 backdrop-blur-xl p-6 rounded-xl border border-white/20 shadow-2xl shadow-green-900/30">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center">
               <div className="w-5 h-5 bg-green-500 rounded-full"></div>
