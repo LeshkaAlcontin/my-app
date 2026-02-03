@@ -1,6 +1,8 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Glow } from "@/components/ui/glow"; // Adjust path if needed
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +29,18 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        {/* Full-page background container */}
+        <div className="fixed inset-0 bg-black overflow-hidden -z-10">
+          {/* Background with multiple glow effects */}
+          <Glow variant="top" className="opacity-70" />
+          <Glow variant="center" className="opacity-70" />
+          <Glow variant="bottom" className="opacity-70" />
+        </div>
+        
+        {/* Main content */}
+        <div className="relative z-10">
+          {children}
+        </div>
       </body>
     </html>
   );
