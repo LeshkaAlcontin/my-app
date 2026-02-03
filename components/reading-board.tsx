@@ -18,7 +18,7 @@ export default function ReadingBoard() {
   };
 
   return (
-    <div className="mt-20">
+    <div className="mt-10">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
         <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
           2026 READING BOARD
@@ -79,9 +79,9 @@ export default function ReadingBoard() {
                 </span>
                 <div className="mt-3">
                   <div className="h-1.5 bg-gray-800 rounded-full overflow-hidden">
-                    <div className="h-full bg-purple-500 w-2/3"></div>
+                    <div className="h-full bg-purple-500 w-1/2"></div>
                   </div>
-                  <p className="text-xs text-gray-400 mt-1 text-right">67% complete</p>
+                  <p className="text-xs text-gray-400 mt-1 text-right">50% complete</p>
                 </div>
               </div>
             ))}

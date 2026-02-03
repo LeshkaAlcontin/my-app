@@ -1,26 +1,29 @@
-// app/page.tsx
-import ReadingBoard from '@/components/reading-board';
+import FooterNav from "@/components/footer-nav";
 
-export default function Home() {
+export default function AboutPage() {
   return (
-    <div className="container mx-auto px-6">
-      {/* Reading Board Section */}
-      <ReadingBoard />
-
-      {/* Footer/Call to action */}
-      <div className="text-center mt-32 pt-16 border-t border-gray-800">
-        <h2 className="text-3xl font-bold mb-6">Need Book Recommendations?</h2>
-        <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-          Join our reading community to discover new books, track your progress, and connect with fellow readers.
+    <div className="container mx-auto px-6 py-15">
+      <div className="text-center pt-20 pb-10">
+        <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-12">
+          <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+            LESHICAKE'S READING LIST [2026]
+          </span>
+        </h1>
+        <p className="text-l text-gray-300 max-w-3xl mx-auto mb-10">
+          Hi! Welcome to my site. Before everything else, I just want to say that I am not the biggest reader out there.
+          However, I do enjoy reading books from time to time, and I wanted to share my reading list for 2026 with you all.
+          This list includes books I have been putting off for a long time now.
+          Feel free to explore and maybe even find some new books to add to your own reading list!
         </p>
-        <div className="flex gap-4 justify-center">
-          <button className="px-10 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl font-bold text-lg hover:opacity-90 transition">
-            Join Reading Club
-          </button>
-          <button className="px-10 py-4 bg-gray-800 hover:bg-gray-700 rounded-xl font-bold text-lg transition">
-            View All Books
-          </button>
+        // In your app/page.tsx - After the paragraph, add:
+        <div className="mt-5 mb-5 flex justify-center">
+          <img
+            src="/my-melody.png"
+            alt="Cute reading illustration"
+            className="max-w-[100px] w-full"
+          />
         </div>
+        <FooterNav />
       </div>
     </div>
   );
